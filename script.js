@@ -1,5 +1,6 @@
 let cardsContainer=document.querySelector(".cards-container");
 let searchCard=document.querySelector(".text");
+let dropDown=document.getElementById("sortDropDown");
 searchCard.addEventListener("input",()=>{
     let searchText = searchCard.value.toLowerCase();
     console.log(searchText);
@@ -13,6 +14,26 @@ searchCard.addEventListener("input",()=>{
         }
     });
 })
+dropDown.addEventListener("change",()=>{
+    if(dropDown.value==="low-to-high"){
+        cardCollectorArray.sort((a,b)=>a.price-b.price);
+        cardsContainer.innerHTML="";
+
+         cardCollectorArray.forEach(item => {
+           cardsContainer.appendChild(item.card);
+
+    });
+    }
+       else if(dropDown.value==="high-to-low"){
+        cardCollectorArray.sort((a,b)=>b.price-a.price);
+        cardsContainer.innerHTML="";
+
+         cardCollectorArray.forEach(item => {
+           cardsContainer.appendChild(item.card);
+
+    });
+    }
+})
 let cardCollectorArray=[];
 async function cardsGenerator(){
     let response= await fetch('Products.json');
@@ -23,7 +44,7 @@ async function cardsGenerator(){
         let price=document.createElement("lable");
         let productDescription=document.createElement("p");
 
-        
+
 
         cardDiv.appendChild(h2);
         cardDiv.appendChild(price);
@@ -35,7 +56,8 @@ async function cardsGenerator(){
         productDescription.innerText= "Description : "+element.description;
 
           cardCollectorArray.push({
-            name: element.name.toLowerCase(),
+            name: element.name.toLowerCase(), 
+            price:element.price,
             card: cardDiv
         });
          cardDiv.className="card";
