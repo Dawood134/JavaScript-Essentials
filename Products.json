@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Wireless Mouse",
+    "price": 1200,
+    "description": "A comfortable and lightweight wireless mouse with smooth tracking."
+  },
+  {
+    "id": 2,
+    "name": "Mechanical Keyboard",
+    "price": 4500,
+    "description": "RGB backlit mechanical keyboard with blue switches for tactile feedback."
+  },
+  {
+    "id": 3,
+    "name": "USB-C Hub",
+    "price": 2100,
+    "description": "7-in-1 USB-C hub with HDMI, USB 3.0, and SD card slots."
+  },
+  {
+    "id": 4,
+    "name": "Noise Cancelling Headphones",
+    "price": 8200,
+    "description": "Over-ear wireless headphones with active noise cancellation and deep bass."
+  },
+  {
+    "id": 5,
+    "name": "Laptop Stand",
+    "price": 1600,
+    "description": "Aluminum adjustable laptop stand for better posture and cooling."
+  },
+  {
+    "id": 6,
+    "name": "Smart LED Bulb",
+    "price": 900,
+    "description": "Wi-Fi enabled smart bulb with multiple colors and app control."
+  },
+  {
+    "id": 7,
+    "name": "Portable Charger 10000mAh",
+    "price": 2400,
+    "description": "Fast charging power bank with dual USB ports and compact design."
+  },
+  {
+    "id": 8,
+    "name": "Bluetooth Speaker",
+    "price": 3200,
+    "description": "Portable Bluetooth speaker with deep bass and 10 hours playtime."
+  },
+  {
+    "id": 9,
+    "name": "Ergonomic Office Chair",
+    "price": 14500,
+    "description": "Comfortable office chair with lumbar support and adjustable height."
+  },
+  {
+    "id": 10,
+    "name": "External Hard Drive 1TB",
+    "price": 6700,
+    "description": "USB 3.0 external hard drive with fast transfer and secure backup."
+  }
+]
